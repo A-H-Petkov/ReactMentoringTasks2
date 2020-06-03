@@ -1,0 +1,46 @@
+{
+  "name": "react_mentoring_program_task-2",
+  "version": "1.0.0",
+  "description": "configure react app from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --mode development --hot",
+    "clean": "rimraf build",
+    "build": "yarn run clean && webpack-cli",
+    "build:dev": "yarn run build --mode=development",
+    "build:prod": "yarn run build --mode=production"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "redux",
+    "testing"
+  ],
+  "author": "alexander_petkov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.5.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
+    "react-test-renderer": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0"
+  }
+}
